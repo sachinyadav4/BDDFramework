@@ -51,7 +51,7 @@ public class LandingPage extends base {
 	@FindBy(xpath = "//div[@id='glsctl00_mainContent_ddl_originStation1_CTNR'] //a[@value='BLR']")
 	private WebElement destLocSelection;
 
-	@FindBy(xpath = "//*[@id='ui-datepicker-div']/div[2]/table/tbody/tr[2]/td[2]/a")
+	@FindBy(xpath = "//td[contains(@class,'ui-datepicker-today')]/following-sibling::td[1]/a")
 	private WebElement startDate;
 
 	@FindBy(id = "divpaxinfo")
